@@ -1,0 +1,94 @@
+/* Estilos para telas grandes (desktops) */
+@font-face {
+    font-family: Itim;
+    src: url(../assets/fonts/Itim-Regular.ttf);
+ }
+
+    body {
+      font-family: Itim;
+      background: #292929 url("../assets/image/back.svg") no-repeat right top;
+      background-size: 100%;
+    }
+
+    .indexc{
+      padding-top: 20px;
+    }
+
+    .indexbox{
+      display:flex;
+      color: #D9D9D9;
+      align-items: center;
+      margin-left: 40px;
+    }
+    
+    .indexbox h4{
+      color: rgba(217, 217, 217, 0.67);
+    }
+
+    .apresent{
+      display: inline;
+      margin-top: 10px;
+    }
+
+    .indexm{
+      width: 190px;
+    }
+
+    .n{
+      margin-top: 15px;
+      border-radius: 10px;
+      justify-content: space-evenly !important;
+      background: #292929;
+      font-size: 0.8em;
+    }
+
+    .n a{
+      color: #d9d9d9;
+    }
+
+    .nav-link:hover{
+      color: #d9d9d9;
+    }
+
+
+  
+  /* Estilos para notbook */
+  @media (max-width: 1200px) and (min-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 900px) {
+    body {
+      font-family: Itim;
+      background: #292929 url("../assets/image/back.svg") no-repeat right top ;
+      background-size: 100%;
+    }
+
+    .indexc{
+      padding-top: 20px;
+    }
+
+    .indexbox{
+      display:flex;
+      color: #D9D9D9;
+      align-items: center;
+      margin-left: 40px;
+    }
+    
+    .indexbox h4{
+      color: rgba(217, 217, 217, 0.67);
+    }
+
+    .apresent{
+      display: inline;
+      margin-top: 10px;
+    }
+
+    .indexm{
+      width: 190px;
+    }
+}
