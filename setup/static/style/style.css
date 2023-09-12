@@ -1,94 +1,81 @@
-/* Estilos para telas grandes (desktops) */
 @font-face {
-    font-family: Itim;
-    src: url(../assets/fonts/Itim-Regular.ttf);
- }
-
-    body {
-      font-family: Itim;
-      background: #292929 url("../assets/image/back.svg") no-repeat right top;
-      background-size: 100%;
-    }
-
-    .indexc{
-      padding-top: 20px;
-    }
-
-    .indexbox{
-      display:flex;
-      color: #D9D9D9;
-      align-items: center;
-      margin-left: 40px;
-    }
-    
-    .indexbox h4{
-      color: rgba(217, 217, 217, 0.67);
-    }
-
-    .apresent{
-      display: inline;
-      margin-top: 10px;
-    }
-
-    .indexm{
-      width: 190px;
-    }
-
-    .n{
-      margin-top: 15px;
-      border-radius: 10px;
-      justify-content: space-evenly !important;
-      background: #292929;
-      font-size: 0.8em;
-    }
-
-    .n a{
-      color: #d9d9d9;
-    }
-
-    .nav-link:hover{
-      color: #d9d9d9;
-    }
-
-
-  
-  /* Estilos para notbook */
-  @media (max-width: 1200px) and (min-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-
-  }
-  
-  /* Estilos para dispositivos móveis */
-  @media (max-width: 900px) {
-    body {
-      font-family: Itim;
-      background: #292929 url("../assets/image/back.svg") no-repeat right top ;
-      background-size: 100%;
-    }
-
-    .indexc{
-      padding-top: 20px;
-    }
-
-    .indexbox{
-      display:flex;
-      color: #D9D9D9;
-      align-items: center;
-      margin-left: 40px;
-    }
-    
-    .indexbox h4{
-      color: rgba(217, 217, 217, 0.67);
-    }
-
-    .apresent{
-      display: inline;
-      margin-top: 10px;
-    }
-
-    .indexm{
-      width: 190px;
-    }
+  font-family: Itim;
+  src: url("/static/assets/fonts/Itim-Regular.ttf");
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Itim;
+  background: rgb(33,37,41) url("/static/assets/image/back.svg") no-repeat;
+  background-size: 100%;
+  color: rgba(33, 37, 41);
+}
+
+form{
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2, p{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#offcanvasDarkNavbarLabel{
+  margin-left: 50px;
+}
+
+.ctn{
+  margin: 0px 20px;
+}
+
+.nav-item{
+  font-size: 25px;
+  margin-left: 60px;
+  margin-top: 30px;
+  
+}
+
+a{
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.menu{
+  background-color: rgb(33,37,41);
+  color: #d9d9d9;
+}
+
+.indexAvatar{
+  width: 20%;
+}
+
+.linhas,
+.linhas * {
+  box-sizing: border-box;
+}
+.linhas {
+  position: relative;
+  overflow: visible;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.part1{
+  margin-top: 30px;
+  border: 1px solid red;
+}
+
+.part2{
+  border: 1px solid red;
+}
+

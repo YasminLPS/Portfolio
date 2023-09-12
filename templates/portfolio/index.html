@@ -1,14 +1,53 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 {% block content %}
-<div class="container indexc">
-  <div class="indexbox">
-    <img src="{% static '/assets/image/avatar.svg' %}" class="img-fluid indexm" alt="">
-    <div class="apresent">
-        <h2>Hello, there!</h2>
-        <h3>I'm Yasmin Lopes</h3>
-        <h4>Machine Learning Jr.</h4>
-      <div>
-    </div>
+<div class="d-flex justify-content-center part1">
+  <img src="{% static '/assets/image/avatar.svg' %}" class="img-fluid indexAvatar" alt="">
+  <div class="d-flex flex-column justify-content-center">
+      <h1>Hello, there!</h1>
+      <h2>I'm Yasmin Lopes</h2>
+      <h3>Machine Learning Jr.</h3>
   </div>
+    <svg
+      class="linhas"
+      width="680"
+      height="360"
+      viewBox="0 0 680 360"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.00001 315.579V299.44C2.14416 296.341 5.55595 292.193 8.56008 291.88H114.593V246.45C114.38 241.519 119.482 237.272 124 237.043H230.721V187.146C229.589 185.636 235.707 177.737 239.181 178.686H344.253C343.569 145.569 343.569 127.717 344.253 125.129C345.278 121.247 348.029 118.198 352.436 116.945H455.374V68.4629C455.795 66.2021 459.264 63.0438 461.939 61.8975H569.074V11.4007C569.915 7.08133 574.855 1.00075 580.475 0H680V21.4006H597.369C592.519 21.3208 588.551 25.7204 588.94 29.8295V82.5364H483.53C479.31 82.9495 475.042 87.425 474.768 91.2989V136.438H372.548C366.706 136.116 362.121 140.904 363.146 145.84V198.141H258.709C253.484 198.23 249.433 203.512 249.13 207.72V257.54H142.749C136.615 257.201 132.092 262.724 132.545 267.744V310.949H17.1713V332.931H1"
+        fill="#2A4865"
+      />
+      <path
+        d="M133.668 360C93.8635 360 0.985352 360 0.985352 360L0.985356 332.931H17.1566L17.1567 346.428H114.578V314.678C113.991 307.094 120.553 301.458 126.904 302.352C126.904 302.352 199.566 302.352 230.706 302.352V257.205C230.928 254.747 234.808 249.932 239.769 248.559H346.759V198.393C344.568 192.501 354.091 182.724 363.132 183.92H459.075V135.884C458.874 132.515 461.572 127.997 467.019 127.94H561.592C569.059 127.94 570.644 120.781 571.158 118.374V78.7464C572.069 74.9924 575.011 69.6322 580.266 69.6379H679.985V89.6897H597.354C591.108 89.4741 588.497 95.202 587.834 99.2105V137.218C588.216 142.267 582.632 145.423 578.607 146.444H490.065C483.269 145.463 479.692 152.445 478.876 157.634V205.294H372.533C367.11 205.085 365.078 209.955 364.496 213.331V256.839C363.587 260.953 360.502 267.173 353.1 268.235H258.694C250.157 268.604 250.358 272.508 250.157 276.772V323.013H142.734C136.989 323.131 133.279 328.179 133.559 332.188C133.559 332.188 134.8 360 133.668 360Z"
+        fill="#FFEF76"
+      />
+    </svg>
+
+    
+</div>
+
+  <div class="d-flex justify-content-center part2">
+
+      <form method="post" class="">
+        {% csrf_token %}
+        <div class="mb-3">
+          <input name='name' type="text" class="form-control" id="usr" required>
+        </div>
+          <div class="mb-3">
+            <input name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          </div>
+          <div class="mb-3">
+            <textarea name='subject' type="text" class="form-control" id="subject" required></textarea>
+          </div>
+        <input type="submit" class="btn btn-primary" value="Enviar">
+      </form>
+
+      <div class="flex-container flex-column justify-content-center">
+        <h1>Welcome to my portfolio!</h1>
+        <p >You can send a email for me, just type your name, email and the email body on left</p>
+    </div>
+    <div>
 {% endblock  %}

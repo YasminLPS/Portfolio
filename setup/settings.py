@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path, os
 from dotenv import load_dotenv
+import django
+import smtplib
+
 
 load_dotenv()
 
@@ -42,7 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'bootstrap5',
+    'bootstrapform',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -134,3 +141,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'yasminportfolio@outlook.com'
+EMAIL_HOST_PASSWORD = str(os.getenv('senha_email'))
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'yasminportfolio@outlook.com'
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+

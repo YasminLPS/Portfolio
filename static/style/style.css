@@ -1,24 +1,40 @@
-/* Estilos para telas grandes (desktops) */
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
+@font-face {
+  font-family: Itim;
+  src: url("/static/assets/fonts/Itim-Regular.ttf");
 }
 
-/* Estilos para tablets */
-@media (max-width: 1199px) and (min-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 767px) {
-  body {
-    font-size: 12px;
-  }
-
-
+body {
+  font-family: Itim;
+  background: rgb(33,37,41) url("/static/assets/image/back.svg") no-repeat;
+  background-size: 100%;
+  color: rgba(33, 37, 41);
 }
+
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#offcanvasDarkNavbarLabel{
+  margin-left: 20px;
+}
+
+.ctn{
+  margin: 0px 20px;
+}
+
+
+
+.nav-item{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+
+
